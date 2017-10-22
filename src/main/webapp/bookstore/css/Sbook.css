@@ -1,0 +1,51 @@
+body{
+	background-color: #003159
+	
+}
+
+
+div.container-fluid .row{
+	background-color: #001f37
+	
+}
+
+nav.navbar{
+	background-color:#66c0f4;
+}
+
+
+.arrange{
+	left:15px;
+	
+}
+
+.item{
+	color:#c0c0c0;
+	
+}
+img{width:150px;}
+
+.color1{color:#3399CC ; text-decoration:none;font-weight:bold;}/*链接设置*/
+.color1:visited{color:#3399CC; text-decoration:none;font-weight:bold;}/*访问过的链接设置*/
+.color1:hover{color:#CF0000; text-decoration:underline;font-weight:bold;}/*鼠标放上的链接设置*/
+
+
+h2 {color: #000000}
+
+.nav>li>a {
+	position: relative;
+	display: block;
+	color:#000000
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+	text-decoration: none;
+	background-color: #fff !important;
+	color:#3399cc
+}
+
+
+nav.navbar-default:hover{
+	color:#000;
+	
+}

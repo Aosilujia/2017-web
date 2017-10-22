@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="model.Order" table="orders">
+		<id name="id" type="int">
+			<column name="Order_id" />
+			<generator class="assigned" />
+		</id>
+		<property name="userid" type="int">
+			<column name="User_id" />
+		</property>
+		<property name="date" type="java.sql.Date">
+			<column name="Order_date" />
+		</property>
+		<property name="payed" type="int">
+			<column name="Payed" />
+		</property>
+		<set name="orderitems" lazy="false" inverse="true">
+			<key column="Order_id" />
+			<one-to-many class="model.Orderitem" />
+		</set>
+	</class>
+</hibernate-mapping>

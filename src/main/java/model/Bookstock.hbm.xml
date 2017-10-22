@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="model.Bookstock" table="bookstock">
+		<id name="id" type="int">
+			<column name="Book_id" />
+			<generator class="assigned" />
+		</id>
+		<property name="stock" type="int">
+			<column name="Stock" />
+		</property>
+		<property name="price" type="double">
+			<column name="Price" />
+		</property>
+	</class>
+</hibernate-mapping>
